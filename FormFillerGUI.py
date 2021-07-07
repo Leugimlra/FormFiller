@@ -3,11 +3,21 @@
 
 import PySimpleGUI as sg
 
-sg.theme("DarkAmber")
+sg.theme("DarkBlack1")
 
-layout = [[ sg.Combo(['choice1', 'choice2', 'choice3'])]]
+left_column = [
+  [
+    sg.Combo(['26F COMPLIANCE FOR SMOKE DETECTORS AND CARBON MONOXIDE ALARMS'])
+  ],
+  [
+    sg.InputText("Owner")
+  ]
 
+]
+
+layout = [[sg.Column(left_column)]]
 window = sg.Window("MFD FormFiller", layout)
+
 
 
 
